@@ -1,0 +1,67 @@
+<!DOC<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>판매 정보 등록 화면</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>판매 정보 등록 화면</h1>
+        </div>
+        <div class="main">
+            <div class="tabs">
+                <button class="tab-button active">판매관리</button>
+                <button class="tab-button">코드관리</button>
+            </div>
+            <div class="form">
+                <h2>판매 정보 등록</h2>
+                <form>
+                    <label for="code">코드</label>
+                    <input type="text" id="code" name="code">
+                    
+                    <label for="codeName">코드 명</label>
+                    <input type="text" id="codeName" name="codeName">
+                    
+                    <label for="nal">판매일</label>
+                    <input type="date" id="nal" name="nal">
+                    
+                    <label for="ea">수량</label>
+                    <input type="number" id="ea" name="ea">
+                    
+                    <label for="price">단가</label>
+                    <input type="number" id="price" name="price">
+                    
+                    <label for="amt">금액</label>
+                    <input type="number" id="amt" name="amt">
+                    
+                    <button type="update">수정</button>
+                    <button type="delete">삭제</button>
+                </form>
+            </div>
+            <div class="table-section">
+                <h2>판매 관리</h2>
+                <div class="table-controls">
+                    <button class="register-button">등록</button>
+                    <input type="text" placeholder="검색">
+                    <button class="search-button">검색</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>판매일</th>
+                            <th>코드</th>
+                            <th>코드명</th>
+                            <th>금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
